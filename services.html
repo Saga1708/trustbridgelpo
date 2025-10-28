@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services — TrustBridgeLPO</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="site-wrapper">
+    <header class="site-header">
+      <div class="brand">
+        <div class="logo">TB</div>
+        <div class="brand-text">
+          <div class="company">TrustBridgeLPO</div>
+          <div class="tag">Bridging Trust & Delivering Excellence</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="controls">
+        <button id="theme-toggle-3" class="theme-btn" title="Toggle theme">🌗</button>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <!-- include canvas for continuous background -->
+      <canvas id="canvas" class="bg-canvas"></canvas>
+
+      <section class="page-head container">
+        <h1>Our Services</h1>
+        <p class="lead">Comprehensive legal process outsourcing services across practice areas — tailored for TrustBridgeLPO.</p>
+      </section>
+
+      <!-- Slider -->
+      <section class="service-slider container">
+        <div class="slide" id="serviceSlide">
+          <!-- All 12 items (same as earlier). Keep images or swap as desired -->
+          <!-- 1 Business Litigation -->
+          <div class="item" style="background-image:url('https://images.unsplash.com/photo-1526318472351-c75fcf0708f1?q=80&w=1470&auto=format&fit=crop')">
+            <div class="content">
+              <div class="name">Business Litigation Support</div>
+              <div class="des">End-to-end litigation support — document review, discovery analysis, contract disputes, IP matters, shareholder conflicts, and more. We protect your business interests with strategic precision.</div>
+              <a class="seeMore" href="#business-lit"><button>See More</button></a>
+            </div>
+          </div>
+
+          <!-- 2 Contracts -->
+          <div class="item" style="background-image:url('https://images.unsplash.com/photo-1529078155058-5d716f45d604?q=80&w=1470&auto=format&fit=crop')">
+            <div class="content">
+              <div class="name">Contract Law Support</div>
+              <div class="des">Drafting, review, negotiation, and lifecycle management across the U.S., U.K., and Canada — ensuring clarity, enforceability, and risk reduction.</div>
+              <a class="seeMore" href="#contracts"><button>See More</button></a>
+            </div>
+          </div>
+
+          <!-- 3 Personal Injury -->
+          <div class="item" style="background-image:url('https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1470&auto=format&fit=crop')">
+            <div class="content">
+              <div class="name">Personal Injury Support</div>
+              <div class="des">Comprehensive support for injury claims — case analysis, research, document drafting, and process management to strengthen outcomes for clients.</div>
+              <a class="seeMore" href="#personal-injury"><button>See More</button></a>
+            </div>
+          </div>
+
+          <!-- 4 Employment -->
+          <div class="item" style="background-image:url('https://images.unsplash.com/photo-1555371363-7c59b1b4b0f9?q=80&w=1470&auto=format&fit=crop')">
+            <div class="content">
+              <div class="name">Employment Law Support</div>
+              <div class="des">Compliance, policy drafting, litigation prep, and dispute resolution with deep knowledge of federal and state regulations.</div>
+              <a class="seeMore" href="#employment-law"><button>See More</button></a>
+            </div>
+          </div>
+
+          <!-- 5 Workers' Compensation -->
+          <div class="item" style="background-image:url('https://images.unsplash.com/photo-1526676037130-1cc8fd7a2c7d?q=80&w=1470&auto=format&fit=crop')">
+            <div class="content">
+              <div class="name">Workers' Compensation</div>
+              <div class="des">Paralegal support for workplace injury claims — medical record analysis, litigation support, and settlement coordination to achieve just results.</div>
+              <a class="seeMore" href="#workers-comp"><button>See More</button></a>
+            </div>
+          </div>
+
+          <!-- 6 Estate Planning -->
+          <div class="item" style="background-image:url('https://images.unsplash.com/photo-1529655683826-aba9b3e77383?q=80&w=1470&auto=format&fit=crop')">
+            <div class="content">
+              <div class="name">Estate Planning & Probate</div>
+              <div class="des">Tailored estate documents and probate assistance — will validation, claims handling, court coordination, and legacy protection.</div>
+              <a class="seeMore" href="#estate-probate"><button>See More</button></a>
+            </div>
+          </div>
+
+          <!-- 7 Real Estate -->
+          <div class="item" style="background-image:url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1470&auto=format&fit=crop')">
+            <div class="content">
+              <div class="name">Real Estate Legal Support</div>
+              <div class="des">Protecting property interests from ownership transitions to disputes with careful document drafting and risk mitigation.</div>
+              <a class="seeMore" href="#real-estate"><button>See More</button></a>
+            </div>
+          </div>
+
+          <!-- 8 Family Law -->
+          <div class="item" style="background-image:url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=1470&auto=format&fit=crop')">
+            <div class="content">
+              <div class="name">Family Law Support</div>
+              <div class="des">Support with sensitivity — intake, document drafting, research, and coordination to protect families during difficult transitions.</div>
+              <a class="seeMore" href="#family-law"><button>See More</button></a>
+            </div>
+          </div>
+
+          <!-- 9 Immigration -->
+          <div class="item" style="background-image:url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1470&auto=format&fit=crop')">
+            <div class="content">
+              <div class="name">Immigration Law Support</div>
+              <div class="des">Comprehensive assistance for VAWA, I-130, EB petitions, U visas, SIJ, and asylum filings prepared with precision and compassion.</div>
+              <a class="seeMore" href="#immigration"><button>See More</button></a>
+            </div>
+          </div>
+
+          <!-- 10 IP -->
+          <div class="item" style="background-image:url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1470&auto=format&fit=crop')">
+            <div class="content">
+              <div class="name">Intellectual Property Support</div>
+              <div class="des">Drafting and review to secure trademarks, patents, and copyrights — preserving ownership and compliance in a changing legal landscape.</div>
+              <a class="seeMore" href="#intellectual-property"><button>See More</button></a>
+            </div>
+          </div>
+
+          <!-- 11 Criminal -->
+          <div class="item" style="background-image:url('https://images.unsplash.com/photo-1529390079861-591de354faf5?q=80&w=1470&auto=format&fit=crop')">
+            <div class="content">
+              <div class="name">Criminal Law Support</div>
+              <div class="des">Comprehensive criminal defense assistance — case analysis, pre-trial prep, plea negotiation support, and courtroom readiness.</div>
+              <a class="seeMore" href="#criminal-law"><button>See More</button></a>
+            </div>
+          </div>
+
+          <!-- 12 Bankruptcy -->
+          <div class="item" style="background-image:url('https://images.unsplash.com/photo-1542228263-76c2c7f8a5c2?q=80&w=1470&auto=format&fit=crop')">
+            <div class="content">
+              <div class="name">Bankruptcy Support</div>
+              <div class="des">Strategic support for debt relief and financial recovery — filings, record analysis, and restructuring assistance.</div>
+              <a class="seeMore" href="#bankruptcy"><button>See More</button></a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="button">
+          <button class="prev">◁</button>
+          <button class="next">▷</button>
+        </div>
+      </section>
+
+      <!-- Short detail anchors -->
+      <section class="container container-details">
+        <div id="business-lit" class="detail card">
+          <h3>Business Litigation Support</h3>
+          <p>End-to-end litigation support — document review, discovery analysis, contract disputes, IP matters, shareholder conflicts, and more.</p>
+        </div>
+        <div id="contracts" class="detail card">
+          <h3>Contract Law Support</h3>
+          <p>Drafting, negotiation, and lifecycle management across the U.S., U.K., and Canada — ensuring clarity, enforceability, and risk reduction.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>© <span id="year3"></span> TrustBridgeLPO — Bridging Trust & Delivering Excellence</div>
+      <div>Email: <a href="mailto:info@trustbridgelpo.com">info@trustbridgelpo.com</a></div>
+    </footer>
+  </div>
+
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>

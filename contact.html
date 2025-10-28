@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — TrustBridge LPO</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="site-wrapper">
+    <header class="site-header">
+      <div class="brand">
+        <div class="logo">TB</div>
+        <div class="brand-text">
+          <div class="company">TrustBridgeLPO</div>
+          <div class="tag">Bridging Trust & Delivering Excellence</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+
+      <div class="controls">
+        <button id="theme-toggle-4" class="theme-btn" title="Toggle theme">🌗</button>
+      </div>
+    </header>
+
+    <main class="page-main container">
+      <!-- include canvas for continuous background -->
+      <canvas id="canvas" class="bg-canvas"></canvas>
+
+      <section class="page-head">
+        <h1>Contact</h1>
+        <p class="lead">Ready to discuss your needs? Schedule a strategy call or send us a message and our team will respond promptly.</p>
+      </section>
+
+      <section class="contact-wrap">
+        <form id="contactForm" class="contact-form card">
+          <label><span>Your name</span><input type="text" id="name" required /></label>
+          <label><span>Email</span><input type="email" id="email" required /></label>
+          <label><span>Message</span><textarea id="message" rows="6" required></textarea></label>
+
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Send message</button>
+            <button type="button" id="mailtoFallback" class="btn ghost">Email: info@trustbridgelpo.com</button>
+          </div>
+
+          <div id="formStatus" class="form-status"></div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>© <span id="year4"></span> TrustBridgeLPO — Bridging Trust & Delivering Excellence</div>
+      <div>Email: <a href="mailto:info@trustbridgelpo.com">info@trustbridgelpo.com</a></div>
+    </footer>
+  </div>
+
+  <!-- EmailJS CDN (required for contact email feature) -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>
