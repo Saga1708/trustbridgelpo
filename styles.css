@@ -121,3 +121,14 @@ a{ color:inherit; }
   .content .name{ font-size:28px; }
   .page-head{ padding:14px; }
 }
+
+/* --- Hide tube cursor on About and Services pages (add at end of styles.css) --- */
+body.page-about #canvas,
+body.page-services #canvas,
+body.page-about .tube-cursor,
+body.page-services .tube-cursor,
+body.page-about .cursor,
+body.page-services .cursor {
+  display: none !important;
+  pointer-events: none !important;
+}
